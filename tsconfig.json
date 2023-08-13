@@ -1,0 +1,57 @@
+{
+	"compilerOptions": {
+	  "target": "ES2020",
+	  "module": "ES2020",
+	  "lib": [
+		"DOM",
+		"DOM.Iterable",
+		"ESNext"
+	  ],
+	  "allowJs": true,
+	  "checkJs": false,
+	  "jsx": "react-jsx",
+	  "incremental": true,
+	  "noEmit": true,
+	  "strict": false,
+	  "noImplicitAny": true,
+	  "strictNullChecks": true,
+	  "noUnusedLocals": false,
+	  "noUnusedParameters": false,
+	  "noImplicitReturns": false,
+	  "noFallthroughCasesInSwitch": false,
+	  "baseUrl": ".",
+	  "paths": {
+		"/*": [
+		  "*"
+		]
+	  },
+	  "moduleResolution": "Node",
+	  "resolveJsonModule": true,
+	  "types": [
+		"node",
+		"vite/client"
+	  ],
+	  "allowSyntheticDefaultImports": true,
+	  "esModuleInterop": true,
+	  "preserveSymlinks": true,
+	  "typeRoots": [
+		"./node_modules/@types",
+		"./node_modules"
+	  ],
+	  "skipLibCheck": true
+	},
+	"ts-node": {
+	  "transpileOnly": true,
+	  "esm": true,
+	  "compilerOptions": {
+		"moduleResolution": "Node16"
+	  }
+	},
+	"include": [
+	  "./**/*"
+	],
+	"exclude": [
+	  "./public/**/*",
+	  "./node_modules/**/*"
+	]
+}
